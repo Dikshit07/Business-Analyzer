@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+
+<body>
+    <main>
+        <div class="info">
+            <p>Choose Plan</p>
+        </div>
+        <div class="payment">
+            <div class="basic">
+                <div class="header">
+                    <div class="title">
+                        BASIC PLAN
+                    </div>
+                </div>
+                <div class="main">
+                    <ul>
+
+                        <li>Analyze Data through Automation.</li>
+                        <li>Whole time subscription at $15000.</li>
+                        <li id="Recomended">Recomended for thosee which have a knowledge to understand analysis report  with out Analyzer.</li>
+                    </ul>
+
+
+                </div>
+                <div class="footer">
+                    <a th:href="@{/payviaesewa(stringParam='basic')}"><Button class="payviaesewa">PayVia Esewa</Button></a>
+                </div>
+            </div>
+            <div class="average">
+                <div class="header">
+                    <div class="title">
+                        AVERAGE PLAN
+                    </div>
+                </div>
+                <div class="main">
+                    <ul>
+
+                        <li>Analyze Data through Automation.</li>
+                        <li>Customized Data Analysis</li>
+                        <li>Generate report card.</li>
+                        <li>Whole time subscription at $25000.</li>
+                        <li>Can use the limited new upcomming features. </li>
+                        <li id="Recomended">Recomended for thosee who have no knowledge to understand analysis report  without Analyzer.</li>
+                    </ul>
+                </div>
+                <div class="footer"><a th:href="@{/payviaesewa(stringParam='average')}"><Button class="payviaesewa">Pay
+                            Via Esewa</Button></a> </div>
+
+            </div>
+            <div class="advance">
+                <div class="header">
+                    <div class="title">
+                        ADVANCE PLAN
+                    </div>
+                </div>
+                <div class="main">
+                    <ul>
+
+                        <li>Analyze Data through Automation.</li>
+                        <li>Problembased and Detailed Data Analysis.</li>
+                        <li>Generate  Customized Report with Suggestion.</li>
+                        <li>Whole time subscription at $45000.</li>
+                        <li>Can use the all new upcomming features. </li>
+                        <li id="Recomended">Recomended for thosee who have no knowledge to understand analysis report  without Analyzer.</li>
+                    </ul>
+                </div>
+                <div class="footer"><a th:href="@{/payviaesewa(stringParam='advance')}"><Button class="payviaesewa">Pay
+                            Via Esewa</Button></a> </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

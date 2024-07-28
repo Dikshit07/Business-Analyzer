@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eSewa Payment</title>
+  
+ <script>
+  
+ </script>
+</head>
+<body  >
+
+  <form id="esewaForm" action="https://rc-epay.esewa.com.np/api/epay/main/v2/form" method="POST"  th:with="category=${category}">
+    <input type="text" id="amount" name="amount" th:if="${category == 'basic'}" th:value="15000" hidden>
+    <input type="text" id="amount" name="amount" th:if="${category == 'average'}" th:value="25000" hidden>
+    <input type="text" id="amount" name="amount" th:if="${category == 'advance'}" th:value="45000" hidden>
+
+    <input type="text" id="tax_amount" name="tax_amount" value="0" hidden>
+
+    <input type="text" id="total_amount" name="total_amount" th:if="${category == 'basic'}" th:value="15000" hidden>
+    <input type="text" id="total_amount" name="total_amount" th:if="${category == 'average'}" th:value="25000" hidden>
+    <input type="text" id="total_amount" name="total_amount" th:if="${category == 'advance'}" th:value="45000" hidden>
+
+    <input type="text" id="transaction_uuid" name="transaction_uuid" th:value="${transaction_uuid}" hidden>
+    <input type="text" id="product_code" name="product_code" value="EPAYTEST" hidden>
+    <input type="text" id="product_service_charge" name="product_service_charge" value="0" hidden>
+    <input type="text" id="product_delivery_charge" name="product_delivery_charge" value="0" hidden>
+    <input type="text" id="success_url" name="success_url" value="http://localhost:8080/gateway" hidden>
+    <input type="text" id="failure_url" name="failure_url" value="https://localhost:8080" hidden>
+    <input type="text" id="signed_field_names" name="signed_field_names" value="total_amount,transaction_uuid,product_code" hidden>
+    <input type="text" id="signature" name="signature" th:value="${signature}" hidden>
+    <input type="submit" value="Pay vai esewa">
+  </form>
+  <script>
+    // Wait for the DOM to be fully loaded before submitting the form
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get the form element
+      var form = document.getElementById('esewaForm');
+      // Submit the form automatically
+      form.submit();
+    });
+  </script>
+</body>
+
+</html>

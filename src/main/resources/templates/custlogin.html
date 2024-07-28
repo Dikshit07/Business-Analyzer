@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function generateSignature() {
+          var secretKey = "8gBm/:&EnhH.1/q";
+          var total_amount = document.getElementById("total_amount").value;
+          var transaction_uuid = document.getElementById("transaction_uuid").value;
+          var product_code = document.getElementById("product_code").value;
+    
+          var signed_field_names = "total_amount,transaction_uuid,product_code";
+          var message = `total_amount=${total_amount},transaction_uuid=${transaction_uuid},product_code=${product_code}`;
+    
+          var hash = CryptoJS.HmacSHA256(message, secretKey);
+          var hashInBase64 = CryptoJS.enc.Base64.stringify(hash);
+    
+          document.getElementById("signature").value = hashInBase64;
+          return true; // To allow form submission
+        }
+      </script>
+
+</head>
+
+<body>
+    <header>
+        <div class="NavBar">
+            <ul>
+                <li><a href="#">Business Analyzer</a></li>
+                <li><a href="user_report">Report</a></li>
+                <li><a href="/signout" id ="signout">SignOut</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <main>
+        <span th:if="${alreadyDataSubmited}" style="color: rgb(222, 4, 4);margin-bottom: 20px; font-weight: 800; font-family: monospace;font-size: xx-large;">
+            Data has been already  submitted!!!
+        </span>
+
+        <form action="/report" enctype="multipart/form-data"  method="post" onsubmit="return generateSignature();">
+            <div class="containerOne">
+                <label for="business">Select Business:</label>
+                <select id="business" name="bussiness" required>
+                    <option value="" disabled selected>Select business</option>
+
+                    <option value="cafe" >Cafe</option>
+                    <option value="hotel">Hotel</option>
+                    <option value="lodge">Lodge</option>
+                </select>
+
+
+            </div>
+            
+            <div class="containerThree">
+                <label for="uploadfile">Upload your Excel file</label>
+                <br>
+                <input type="file" name="file" id="" required>
+            </div>
+            <div class="containerFour">
+                <label for="message">Give Us Message</label>
+                <input type="text" name="message" required>
+            </div>
+            <div class="submission">
+                <div class="reset">
+                    <input type="reset" value="Reset">
+                        <input value="Submit" type="submit">
+            </div>
+        </form>
+        
+    </main>
+    <footer></footer>
+</body>
+
+</html>

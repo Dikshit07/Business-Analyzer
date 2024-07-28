@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navone">
+                <img src="logo6.png" alt="logo">
+            </div>
+            <div class="navtwo">
+                <ul>
+                    <a href="/" class="navitem">Home</a>
+                    <a href="/registration"><button class="navbutton" id="register">Register</button></a>
+                    <a href="/login"><button class="navbutton" id="login">Login</button></a>
+                    <a href="/userfeedback" class="navitem">About us</a>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <div class="registrationForm">
+            <form action="/register" method="get">
+                <div class="form">
+                    <div id="bussinessAnalyzer">
+                        <img src="registerlogo.png" alt="">
+
+                    </div>
+                    <div class="name">
+                        <label for="RegName">Full Name</label>
+                        <input type="text" name="RegName" id="RegName" required>
+                    </div>
+                    <div class="email">
+                        <label for="regEmail">Email</label>
+                        <input type="email" name="regEmail" id="regEmail" required>
+                    </div>
+                    <div class="password">
+                        <label for="RegPassword">Password</label>
+                        <input type="password" name="RegPassword" id="RegPassword" required
+                            placeholder="Enter Password">
+                    </div>
+                    <div class="ConPassword">
+                        <label for="ConPassword">Confirm Password</label>
+                        <input type="password" name="ConPassword" id="ConPassword" required
+                            placeholder="Confirm Password">
+
+                    </div>
+                    <div class="catageory" style="">
+                        <input type="checkbox" name="catageory" id="checkbox"><label for="checkbox">Login As
+                            Admin</label>
+                    </div>
+                    <div class="Register" id="Register">
+                        <input type="submit"  value="Register">
+                    </div>
+                    <div class="LoginProcess">
+                        <p style="color:#FFC4EB;">Already Account?<a href="/gotologin" id="loginbtn">Login</a></p>
+                    </div>
+                    
+                </div>
+                <div class="formimg">
+                    <img src="register.png" alt="">
+                </div>
+                
+
+            </form>
+            
+
+        </div>
+    </main>
+    <footer>
+        
+
+</body>
+
+</html>

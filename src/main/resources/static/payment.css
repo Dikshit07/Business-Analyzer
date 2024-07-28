@@ -1,0 +1,132 @@
+*
+{
+    background-color: black;  
+}
+main
+{
+
+}
+.payment
+{
+    height: 90vh;
+    display: flex;
+    justify-content:space-around;
+    /* align-items: center; */
+    margin-top: 15px;
+
+}
+.info
+{
+    /* background-color: aliceblue; */
+    display: flex;
+    justify-content: center;
+}
+.info p{
+    border-radius: 20px;
+    background-color: rgb(195, 25, 136);
+    padding: 5px;
+    font-size: larger;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-weight: 800;
+    color: rgb(242, 239, 239);
+    border: none;}
+.basic,.advance,.average
+{
+     background-color: rgb(225, 238, 249);
+    
+    width: 30%;
+    height: 60vh;
+    border-radius: 20px;
+    color: rgb(11, 8, 6);
+    /* display: flex; */
+    /* border: 2px solid green; */
+    text-align: justify;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 6px 1px 8px rgb(34, 118, 178);
+    
+    
+ }
+ .header,.main,.footer{
+    background-color: aliceblue;
+    /* border:2px solid red; */
+ }
+ .header
+ {
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+ }
+ 
+ .main
+ {
+    height: 50vh;
+    margin-left: 5px;
+    display: flex;
+    
+ }
+ @counter-style thumbs {
+    system: cyclic;
+    symbols: "👉🏻";
+    suffix: " ";
+    
+    
+  }
+  
+ ul, ul li
+ {
+    background-color: aliceblue;
+    font-family: monospace;
+    font-size: larger;
+    list-style-type:thumbs;
+    text-align: thumbs;
+    
+
+ }
+ li{
+    margin-top: 5px;
+ }
+ #Recomended
+ {
+    /* color: rgb(97, 8, 222); */
+    font-weight: 600;
+ }
+ .footer
+ {
+    height: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    
+ }
+ a
+ {
+    background-color: rgb(248, 249, 250);
+    border-radius: 20px;
+    
+}
+.payviaesewa{
+    cursor: pointer;
+     border-radius: 20px;
+    background-color: rgb(25, 195, 113);
+    padding: 5px;
+    font-size: larger;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-weight: 800;
+    color: rgb(242, 239, 239);
+    border: none;
+ }
+.title
+{
+    border-radius: 20px;
+    background-color: rgb(25, 25, 195);
+    padding: 5px;
+    font-size: larger;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-weight: 800;
+    color: rgb(242, 239, 239);
+    border: none;}

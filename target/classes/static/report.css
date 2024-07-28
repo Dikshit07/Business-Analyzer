@@ -1,0 +1,119 @@
+*
+{
+    margin: 0%;
+    /* background-color: rgb(172, 166, 166); */
+}
+.repportsection {
+    display: flex;
+    height: 80vh;
+    width: 100%;
+    /* justify-content: space-between; */
+    
+    /* border: 2px solid black; */
+    
+  }
+  .messagefromanalyst{
+    /* border: 2px solid green; */
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+  }
+  .messagefromanalyst .label
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    
+  }
+  .label label{
+    background-color: rgb(36, 25, 135);
+    color: aliceblue;
+    font-size: larger;
+    font-weight: 600;
+    padding: 4px;
+    border-radius: 5px;
+  }
+  .messagefromanalyst .paragraph
+  {
+    margin: 10px;
+    text-align: justify;
+    font-size: large;
+    font-family: monospace;
+    border: 2px solid red;
+    height: 100%;
+    overflow: auto;
+    padding: 2px;
+  }
+
+  .iframe{
+    /* border: 2px solid red; */
+    height: 100%;
+    width: 50%;
+
+  }
+  iframe{
+    width: 97%;
+    height: 100%;
+    border-radius: 45px;
+  }
+  .report_message
+  {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    /* border: 2px solid blue; */
+    justify-content: space-around;
+  }
+  .feedback
+  {
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 49%;
+    
+  }
+  .feedback form{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid black; */
+    height: 100%;
+  }
+  .feedback form label{
+    display: block; 
+    margin-top: 5px;
+    margin-bottom: 8px; 
+    font-size: 17px; 
+    color: green; 
+    font-weight: 600;
+  }
+  .feedback form textarea
+  {
+    width: 30vw;
+    height: 50%;
+    
+    padding: 8px; 
+    margin-bottom: 12px; 
+    box-sizing: border-box; 
+    border-radius: 10px; 
+  }
+  .feedback form button{
+  background-color: #368b44; 
+    color: #fff; 
+    padding: 10px; 
+    border: none; 
+    border-radius: 25px; 
+    cursor: pointer; 
+    width: 100%; 
+    font-size: 15px; 
+    transition: .2s linear; 
+  }
+  .feedback form button:hover { 
+    background-color: #0a6808; 
+    border: none; 
+    transform: translateY(-10px);
+  }
+   

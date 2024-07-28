@@ -1,0 +1,191 @@
+
+*
+{
+    margin: 0%;
+    /* background-color: rgb(225, 235, 229); */
+}
+body{
+    background-color: #AF8D86;
+}
+nav
+{
+    display: flex;
+    justify-content:space-between ;
+    justify-items: center;
+    /* border: 2px solid green; */
+    padding: 20px;
+}
+.navone 
+{
+    display: flex;
+    justify-content: left;
+    /* border: 2px solid rgb(211, 4, 4); */
+    margin-left:20px ;
+}
+.navone img
+{
+    height: 70px;
+    border-radius: 50px 50px;
+    box-shadow: 3px 2px 4px #168AAD;
+    cursor: pointer;
+}
+.navtwo ul
+{
+    display: flex;
+    /* text-decoration: none; */
+    flex-direction: row;
+    gap: 90px;
+    margin-right: 20px;
+    font-size: x-large;
+}
+.navitem, .navbutton
+{
+    text-decoration: none;
+    background-color: #61A0AF;
+    color: black;
+    padding: 10px;
+    border-radius: 20px 20px;
+    box-shadow: 1px 2px 3px #184E77 ;
+}
+.navbutton
+{
+    border: none;
+    font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    background-color: #168aad;
+
+}
+
+form
+{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    background-color: #ADA0A6;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 2vh;
+    overflow: hidden;
+    height: 60vh;
+    border-radius: 35px;
+    box-shadow: 0px 5px 11px #3C3744/* Box shadow */
+    
+
+}
+main
+{
+    height: 75vh;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#bussinessAnalyzer
+{
+    display: flex;
+    margin-bottom: 20px;
+    height: 20vh;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+#bussinessAnalyzer img
+{
+    height: 20vh;
+    border-radius: 20px;
+}
+.form div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px;
+    font-size: larger;
+    font-weight: bold;
+    font-family: monospace;
+}
+.form input,.form label
+{
+    
+    font-family: monospace;
+    font-weight: 800;
+    padding:2px;
+    font-size: larger;
+    margin-bottom: 5px;
+    
+}
+#Register
+{
+    
+    
+    justify-content: flex-end;
+   
+    
+}
+.Register input
+{
+    font-size: x-large;
+    background-color:rgba(11, 37, 189, 0.986);
+    border-style: none;
+    border-radius: 50px;
+    color: rgb(207, 226, 211);
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 30px;
+    box-shadow: 3px 2px 10px rgb(159, 47, 32);
+}
+footer 
+{
+    height: 10vh;
+    /* background-color: black; */
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+.catageory
+{
+    justify-content: flex-start;
+    /* justify-items: center; */
+    gap: 12px;
+}
+.name input,.email input,.password input,.ConPassword input
+{
+    border: none;
+    background:none;
+    
+    
+    border-bottom: 2px solid #0099ff;
+    
+}
+.name input:focus,.email input:focus,.password input:focus,.ConPassword input:focus
+{
+
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 2px solid #0099ff;
+}
+#loginbtn
+{
+    text-decoration: none;
+    border: none;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    margin-left: 3px;
+    background-color: rgb(3, 204, 80);
+    color: white;
+    border-radius: 35px;
+    padding: 4px;
+    box-shadow: 2px 2px 2px black;
+    cursor: pointer;
+}
+.LoginProcess
+{
+display: flex;
+justify-content: space-between;
+align-items: center;
+/* border: 2px solid white; */
+}

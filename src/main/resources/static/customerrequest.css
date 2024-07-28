@@ -1,0 +1,54 @@
+.upload
+{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid green; */
+    margin: 20px;
+}
+.info{
+    margin: 2px;
+
+}
+form
+{
+    display: flex;
+    height: 90%;
+    flex-direction: column;
+    /* border: 2px solid red; */
+}
+.uploadfile{
+margin: 10px;
+}
+.textarea{
+    height: 60%;
+    margin: 10px;
+    
+}
+.textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid sienna;
+    border-radius: 13px;
+    
+}
+.submit{
+display: flex;
+justify-content: flex-end;
+align-items: center;
+margin: 10px;
+height: 10%;
+}
+input
+{
+    border: none;
+    border-radius: 15px;
+    padding: 6px;
+    font-size: medium;
+    font-weight: 900;
+    background-color: rgb(13, 29, 149);
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+}
